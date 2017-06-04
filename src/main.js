@@ -9,11 +9,13 @@ import VueHighlightJS from 'vue-highlightjs'
 
 //vue good components
 import VueGoodTable from 'vue-good-table'
+import VueGoodWizard from 'vue-good-wizard'
 
 Vue.config.productionTip = false
 
 Vue.use(VueHighlightJS)
 Vue.use(VueGoodTable);
+Vue.use(VueGoodWizard);
 
 /* eslint-disable no-new */
 new Vue({

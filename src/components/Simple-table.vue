@@ -1,6 +1,5 @@
 <template>
   <div>
-  <h1 class="title">vue-good-table</h1>
   <h2 class="subtitle">Simple Table Demo</h2>
   <p>Vue-good-table lets you easily and quickly create tables based on your data. These demos are generated using the following data.</p>
 <pre v-highlightjs><code class="javascript">data () {

@@ -2,17 +2,23 @@
   <div class="container is-fluid">
     <div class="main-content">
       <aside class="menu">
-        <p class="menu-label">Vue Good Table</p>
+        <p class="menu-label menu-label--top">Vue Good Table</p>
         <ul class="menu-list">
           <li>
             <router-link :to="{name: 'simple-table'}" active-class="is-active">Simple Table</router-link>
           </li>
-          <li><a>Table Styles</a></li>
-          <li><a>Filtering</a></li>
+          <li>
+            <router-link :to="{name: 'table-styles'}" active-class="is-active">Table Styles</router-link>
+          </li>
+          <li>
+            <router-link :to="{name: 'table-filters'}" active-class="is-active">Table Filters</router-link>
+          </li>
         </ul>
         <p class="menu-label">Vue Good Wizard</p>
         <ul class="menu-list">
-          <li><a>Simple Wizard</a></li>
+          <li>
+            <router-link :to="{name: 'simple-wizard'}" active-class="is-active">Simple Wizard</router-link>
+          </li>
         </ul>
       </aside>
       <div class="demo-holder">
@@ -46,7 +52,7 @@ export default {
   .main-content{
     position:  relative;
     padding-left:  $menu-width + 20px;
-    margin-top:  20px;
+    margin-top:  50px;
   }
   .hljs{
     background: #32363D;
