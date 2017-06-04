@@ -1,6 +1,8 @@
 <template>
 <div>
   <h2 class="subtitle">Simple Wizard Demo</h2>
+  <p>vue-good-wizard is a simple stepper plugin for vue 2.x. Usage details at <a href="https://github.com/xaksis/vue-good-wizard">github project</a></p>
+  <h2 class="subtitle"></h2>
   <vue-good-wizard 
     ref="wizard"
     :steps="steps">

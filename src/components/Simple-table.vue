@@ -1,7 +1,8 @@
 <template>
   <div>
   <h2 class="subtitle">Simple Table Demo</h2>
-  <p>Vue-good-table lets you easily and quickly create tables based on your data. These demos are generated using the following data.</p>
+  <p>Vue-good-table lets you easily and quickly create tables based on your data. These demos are generated using the following data. find Usage details at the <a href="https://github.com/xaksis/vue-good-table">github readme</a></p>
+  <h2 class="subtitle"></h2>
 <pre v-highlightjs><code class="javascript">data () {
     return {
       columns: [
