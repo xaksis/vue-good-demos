@@ -2,6 +2,8 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/components/Home'
 
+import Welcome from '@/components/Welcome'
+
 //demos
 import SimpleTable from '@/components/Simple-table'
 import TableStyles from '@/components/Table-styles'
@@ -14,9 +16,13 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Home',
       component: Home,
       children: [
+        {
+          path: '',
+          name: 'welcome',
+          component: Welcome,
+        },
         //vue good table
         {
           path: 'simple-table',
