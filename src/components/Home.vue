@@ -13,6 +13,9 @@
           <li>
             <router-link :to="{name: 'table-filters'}" active-class="is-active">Table Filters</router-link>
           </li>
+          <li>
+            <router-link :to="{name: 'dynamic-table'}" active-class="is-active">Customize Table</router-link>
+          </li>
         </ul>
         <p class="menu-label">Vue Good Wizard</p>
         <ul class="menu-list">
