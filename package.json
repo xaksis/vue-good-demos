@@ -10,6 +10,7 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "babel-polyfill": "^6.26.0",
     "vue": "^2.3.3",
     "vue-good-table": "^1.17.0",
     "vue-good-wizard": "^1.1.0",
