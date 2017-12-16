@@ -12,7 +12,7 @@
   :defaultSortBy="{field: 'age', type: 'asc'}"
   :globalSearch="true"
   styleClass="table table-bordered table-striped">
-  <template slot="table-row" scope="props">
+  <template slot="table-row" slot-scope="props">
     <td class="fancy">{{ props.row.name }}</td>
     <td class="has-text-right">{{ props.row.age }}</td>
     <td class="has-text-right">{{ props.formattedRow.joined }}</td>
@@ -28,7 +28,7 @@
   :defaultSortBy=&quot;{field: 'age', type: 'asc'}&quot;
   :globalSearch=&quot;true&quot;
   styleClass=&quot;table table-bordered table-striped&quot;&gt;
-  &lt;template slot=&quot;table-row&quot; scope=&quot;props&quot;&gt;
+  &lt;template slot=&quot;table-row&quot; slot-scope=&quot;props&quot;&gt;
     &lt;td class=&quot;fancy&quot;&gt;{{ props.row.name }}&lt;/td&gt;
     &lt;td class=&quot;has-text-right&quot;&gt;{{ props.row.age }}&lt;/td&gt;
     &lt;td class=&quot;has-text-right&quot;&gt;{{ props.formattedRow.joined }}&lt;/td&gt;
@@ -44,7 +44,7 @@
   :columns="columns"
   :paginate="true"
   :rows="rows">
-  <template slot="table-column" scope="props">
+  <template slot="table-column" slot-scope="props">
      <span v-if="props.column.field =='name'">
         <i class="fa fa-user"></i> {{props.column.label}}
      </span>
@@ -55,12 +55,16 @@
         {{props.column.label}}
      </span>
   </template>
+  <template slot="table-row-after" slot-scope="props">
+    <td class="has-text-right">{{ props.row.originalIndex }}</td>
+    <td class="has-text-right">{{ props.index }}</td>
+  </template>
 </vue-good-table>
 <pre v-highlightjs><code class="html" v-pre>&lt;vue-good-table
   :columns=&quot;columns&quot;
   :paginate=&quot;true&quot;
   :rows=&quot;rows&quot;&gt;
-  &lt;template slot=&quot;table-column&quot; scope=&quot;props&quot;&gt;
+  &lt;template slot=&quot;table-column&quot; slot-scope=&quot;props&quot;&gt;
      &lt;span v-if=&quot;props.column.field =='name'&quot;&gt;
         &lt;i class=&quot;fa fa-user&quot;&gt;&lt;/i&gt; {{props.column.label}}
      &lt;/span&gt;
